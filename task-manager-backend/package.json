@@ -1,0 +1,23 @@
+{
+  "name": "task-manager-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Arun Gangula",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

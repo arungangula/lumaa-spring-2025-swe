@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "40486577-56e3-4120-8a32-b6d38bc97c10",
+		"name": "Lumaa_Task_Manager_Arun_Gangula",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2656018"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Arun\",\n    \"password\": \"Arun\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usernames\":\"Aruna\",\n    \"password\":\"Arun\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0MDI2ODcxMSwiZXhwIjoxNzQwMjcyMzExfQ.lwYcXCOkiUGQdVTCi7A7ZWQ9SA2-bobSkGEHFMlT9iE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0MDI2ODcxMSwiZXhwIjoxNzQwMjcyMzExfQ.lwYcXCOkiUGQdVTCi7A7ZWQ9SA2-bobSkGEHFMlT9iE"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"hello\",\n    \"description\": \"heekek\",\n    \"iscomplete\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0MDI2ODcxMSwiZXhwIjoxNzQwMjcyMzExfQ.lwYcXCOkiUGQdVTCi7A7ZWQ9SA2-bobSkGEHFMlT9iE"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"iscomplete\": false,\n    \"title\": \"didi\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/tasks/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Login Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usernames\":\"Aruna\",\n    \"password\":\"Arun\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc0MDI2ODcxMSwiZXhwIjoxNzQwMjcyMzExfQ.lwYcXCOkiUGQdVTCi7A7ZWQ9SA2-bobSkGEHFMlT9iE"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/tasks/2"
+			},
+			"response": []
+		}
+	]
+}
