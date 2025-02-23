@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+}
+
+.main-wrapper {
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 50px auto;
+  padding: 25px;
+  width: 50%;
+}
+
+button.login, button.register {
+  padding: 0px 40px;
+  margin: 10px;
+  width: 25%;
+}
+
+input {
+  margin: 5px;
+  width: 25%;
+}
+
+.logoutButton {
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
